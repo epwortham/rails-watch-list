@@ -1,0 +1,9 @@
+<div class="container mt-5">
+  <h3><i class="fas fa-film"></i> What list do you want to make?</h3>
+
+  <%= simple_form_for(@list) do |f| %>
+    <%= f.input :name %>
+    <%= f.submit class: 'btn btn-warning mt-2' %>
+  <% end %>
+
+</div>
