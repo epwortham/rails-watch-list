@@ -6,6 +6,8 @@
   <div class="row">
     <% @list.bookmarks.each do |bookmark| %>
       <div class="col-12 col-sm-6 col-md-4">
+        <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+
         <h3><%= bookmark.movie.title %></h3>
         <p><%= bookmark.comment %></p>
         <p><%= link_to 'delete', list_bookmark_path(bookmark), class: 'btn btn-warning btn-sm mt-2', method: :delete, data: { confirm: "Are you sure you want to remove #{bookmark.movie.title} from your #{@list.name} list" } %></p>
