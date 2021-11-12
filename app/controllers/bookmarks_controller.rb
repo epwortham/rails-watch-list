@@ -1,6 +1,4 @@
-
 class BookmarksController < ApplicationController
-  # new, create, destroy
   before_action only: :destroy
   def new
     @list = List.find(params[:list_id])
