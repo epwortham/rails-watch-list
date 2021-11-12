@@ -1,12 +1,14 @@
 <div class="container mt-5">
   <h1>Your movie lists</h1>
 
-  <div class="cards">
-      <% @lists.each do |list| %>
-        <div class="card-product">
+  <div class="row">
+    <% @lists.each do |list| %>
+      <div class="col-12 col-sm-4 col-md-3">
+        <%= link_to list_path(list), class:'text-decoration-none' do %>
         <h2><i class="fas fa-film"></i> <%= list.name %></h2>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
+    <% end %>
   </div>
   <%= link_to "Make a new list", new_list_path %>
 </div>
