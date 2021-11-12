@@ -5,6 +5,7 @@
     <% @lists.each do |list| %>
       <div class="col-12 col-sm-4 col-md-3">
         <%= link_to list_path(list), class:'text-decoration-none' do %>
+        <%= cl_image_tag list.photo.key %>
         <h2><i class="fas fa-film"></i> <%= list.name %></h2>
         <% end %>
       </div>
