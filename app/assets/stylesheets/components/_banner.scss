@@ -1,0 +1,177 @@
+// .letters {
+//   display: grid;
+// }
+
+// .letter {
+//   display: flex;
+// }
+
+#div1 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: lightgray;
+  font-weight: bold;
+  position: relative;
+  animation: rightmove 6s infinite alternate;
+  padding: 5px 0 0 10px;
+  box-shadow: 0 0 0 1px black;
+  animation-timing-function: linear;
+  // animation-delay: 1s;
+}
+
+#div6 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #282C34;
+  font-weight: bold;
+  position: relative;
+  animation: leftmove 6s infinite alternate;
+  padding: 5px 0 0 10px;
+  box-shadow: 0 0 0 1px black;
+  animation-timing-function: linear;
+  // animation-delay: 1s;
+}
+
+#div2 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: lightgray;
+  font-weight: bold;
+  position: relative;
+  animation: rightmove 6s infinite alternate;
+  padding: 5px 0 0 10px;
+  box-shadow: 0 0 0 1px black;
+  animation-timing-function: linear;
+  animation-delay: .5s;
+}
+
+#div7 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #282C34;
+  font-weight: bold;
+  position: relative;
+  animation: leftmove 6s infinite alternate;
+  padding: 5px 0 0 10px;
+  box-shadow: 0 0 0 1px black;
+  animation-timing-function: linear;
+  animation-delay: .5s;
+}
+
+#div3 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: lightgray;
+  font-weight: bold;
+  position: relative;
+  animation: rightmove 6s infinite alternate;
+  padding: 5px 0 0 10px;
+  box-shadow: 0 0 0 1px black;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+#div8 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #282C34;
+  font-weight: bold;
+  position: relative;
+  animation: leftmove 6s infinite alternate;
+  padding: 5px 0 0 10px;
+  box-shadow: 0 0 0 1px black;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+#div4 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: lightgray;
+  font-weight: bold;
+  position: relative;
+  animation: rightmove 6s infinite alternate;
+  padding: 5px 0 0 10px;
+  box-shadow: 0 0 0 1px black;
+  animation-timing-function: linear;
+  animation-delay: 1.5s;
+}
+
+#div9 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #282C34;
+  font-weight: bold;
+  position: relative;
+  animation: leftmove 6s infinite alternate;
+  padding: 5px 0 0 10px;
+  box-shadow: 0 0 0 1px black;
+  animation-timing-function: linear;
+  animation-delay: 1.5s;
+}
+
+#div5 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: lightgray;
+  font-weight: bold;
+  position: relative;
+  animation: rightmove 6s infinite alternate;
+  padding: 5px 0 0 10px;
+  box-shadow: 0 0 0 1px black;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+
+#div10 {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #282C34;
+  font-weight: bold;
+  position: relative;
+  animation: leftmove 6s infinite alternate;
+  padding: 5px 0 0 10px;
+  box-shadow: 0 0 0 1px black;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+
+span.a {
+  display: inline-block;
+}
+
+span.b {
+  display: inline-block;
+}
+
+span.c {
+  display: inline-block;
+}
+
+span.d {
+  display: inline-block;
+}
+
+span.e {
+  display: inline-block;
+}
+
+@keyframes rightmove {
+  from {left: 270px;}
+  to {left: 920px;}
+}
+
+@keyframes leftmove {
+  from {left: 0px;}
+  to {left: 650px;}
+}

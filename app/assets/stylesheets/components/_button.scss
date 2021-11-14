@@ -1,0 +1,10 @@
+.btn-default, .btn-default:hover, .btn-default:active, .btn-default:visited {
+    background-color: #8b398b;
+    color: white;
+}
+
+.btn-default:hover {
+  // transform: rotate(360deg);
+  transform: scale(1.1);
+  background-color: #a754a7;
+}

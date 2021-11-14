@@ -1,15 +1,32 @@
-<div class="container mt-5">
-  <h1>Your movie lists</h1>
-
-  <div class="row">
-    <% @lists.each do |list| %>
-      <div class="col-12 col-sm-4 col-md-3">
-        <%= link_to list_path(list), class:'text-decoration-none' do %>
-        <%= cl_image_tag list.photo.key %>
-        <h2><i class="fas fa-film"></i> <%= list.name %></h2>
-        <% end %>
+<h1 class="font-effect-neon" style="padding: 40px" align="center"><font color="white">Your Lists!</font></h1>
+<div class="row" style="padding-bottom: 150px">
+  <% @lists.each do |list| %>
+    <div class="cards">
+      <%= link_to list_path(list), class:'text-decoration-none' do %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key %>')">
+        <%= list.name %>
       </div>
-    <% end %>
-  </div>
-  <%= link_to "Make a new list", new_list_path %>
+      <% end %>
+    </div>
+  <% end %>
 </div>
+<%= link_to 'Make a new list', new_list_path, class: 'btn btn-default btn-block mt-2', style: "margin-bottom: 20px" %>
+
+
+        <%# <%= link_to list_path(list), class:'text-decoration-none' do %>
+        <%# <%= cl_image_tag list.photo.key, height: 220, width: 200, crop: :fill %>
+        <%# <h2><i class="fas fa-film"></i> <%= list.name</h2> %>
+        <%# <% end %>
+<%# <div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+    Breakfast
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+    Lunch
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+    Dinner
+  </div>
+</div> %>

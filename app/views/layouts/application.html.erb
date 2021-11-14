@@ -2,6 +2,10 @@
 <html>
   <head>
     <title>RailsWatchList</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Ubuntu&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +14,38 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body style="background-color:black">
+    <div class="letters">
+      <div class="letter">
+        <span class="a"><div id="div1">L</div></span>
+        <span class="a"><div id="div6">M</div></span><br />
+      </div>
+      <div class="letter">
+        <span class="b"><div id="div2">I</div></span>
+        <span class="b"><div id="div7">O</div></span><br />
+      </div>
+      <div class="letter">
+        <span class="c"><div id="div3">S</div></span>
+        <span class="c"><div id="div8">V</div></span><br />
+      </div>
+      <div class="letter">
+        <span class="d"><div id="div4">T</div></span>
+        <span class="d"><div id="div9">I</div></span><br />
+      </div>
+      <div class="letter">
+        <span class="e"><div id="div5">S</div></span>
+        <span class="e"><div id="div10">E</div></span>
+      </div>
+    </div>
+    <div class="container">
+      <ul>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to "New List", new_list_path %></li>
+        <li><a href="https://www.scientology-tokyo.org/contact/" target="_blank">Contact</a></li>
+      </ul>
+      <div class="background">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
